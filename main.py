@@ -40,6 +40,6 @@ def api_download():
 if __name__ == "__main__":
     # leak
     print(
-        f"http://{socket.gethostbyname(socket.gethostname())}"
-    )  # DevSkim: ignore DS137138
+        f"http://{socket.gethostbyname(socket.gethostname())}"  # DevSkim: ignore DS137138
+    )
     serve(app, host="0.0.0.0", port=39193)
